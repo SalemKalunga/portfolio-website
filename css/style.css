@@ -66,9 +66,48 @@ main {
 main div {
     height: 100%;
     width: 100%;
+}
+
+#home {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#apropos {
+    position: relative;
+    overflow: scroll;
+}
+
+#travaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#skills {
+    text-align: center;
+    overflow: scroll;
+}
+
+#skills h2 {
+    background-color: #333;
+    padding: 10px 0;
+    color: #fff;
+}
+
+#message {
+    padding: 0 20px;
+}
+
+details {
+    margin: 10px;
 }
 
 .skill-logos {
@@ -80,6 +119,10 @@ main div {
     list-style: none;
     float: left;
     margin: 10px;
+}
+
+#apropos {
+    overflow: scroll;
 }
 
 @media screen and (max-width:600px) {
