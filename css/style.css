@@ -1,0 +1,123 @@
+body {
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    position: relative;
+    background-image: url(../images/img3.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body #darken {
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+}
+
+header {
+    height: 70px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 10px;
+    float: left;
+}
+
+ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px 10px;
+    animation: animate .1s ease-in-out .2s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul li a:hover {
+    background-color: rosybrown;
+    animation: animate .1s ease-in-out .2s;
+    transition-duration: 1s;
+}
+
+main {
+    height: 100vh;
+    width: 100%;
+}
+
+main div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-logos {
+    height: 50px;
+    width: 50px;
+}
+
+#skills ul li {
+    list-style: none;
+    float: left;
+    margin: 10px;
+}
+
+@media screen and (max-width:600px) {
+    #home {
+        text-align: center;
+    }
+    #home h2 {
+        color: aliceblue;
+        font-size: 2em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #hireMe {
+        padding: 12px 20px;
+        font-size: 1.2em;
+        background-color: rgba(0, 0, 0, 0);
+        border: 2px solid #fff;
+        color: #fff;
+        border-radius: 8px;
+        box-shadow: 0px 0px 5px #fff;
+        animation: hireme 3s ease-in-out infinite;
+    }
+    @keyframes hireme {
+        0% {
+            padding: 12px 20px;
+        }
+        50% {
+            padding: 15px 25px;
+        }
+        100% {
+            padding: 12px 20px;
+        }
+    }
+    #hireMe:hover {
+        padding: 12px 22px;
+        background-color: rgba(0, 0, 0, .5);
+        transition: .2s;
+    }
+    #apropos {
+        position: relative;
+    }
+}
