@@ -63,7 +63,7 @@ main {
     width: 100%;
 }
 
-main div {
+.containers {
     height: 100%;
     width: 100%;
 }
@@ -77,12 +77,15 @@ main div {
 #apropos {
     position: relative;
     overflow: scroll;
+    box-shadow: 0px 0px 5px #333;
 }
 
 #travaux {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding: 10px;
+    overflow: scroll;
 }
 
 #contact {
@@ -162,5 +165,23 @@ details {
     }
     #apropos {
         position: relative;
+    }
+    #my-projects {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        gap: 10px;
+        overflow: scroll;
+    }
+    .built-project {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #instagram_site {
+        background-image: url(../images/instagram.jpg);
     }
 }
