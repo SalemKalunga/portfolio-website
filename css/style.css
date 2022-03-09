@@ -96,13 +96,6 @@ main {
     background-repeat: no-repeat;
 }
 
-#apropos {
-    position: relative;
-    line-height: 20px;
-    min-height: 100vh;
-    max-height: auto;
-}
-
 #travaux {
     position: relative;
     height: 100vh;
@@ -164,8 +157,27 @@ footer #firstSection ul li {
     list-style: none;
 }
 
+#apropos {
+    position: relative;
+    line-height: 20px;
+    min-height: 100vh;
+    max-height: auto;
+}
+
+#about_me_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 100vh;
+    width: 100%;
+}
+
 #message {
+    position: relative;
     padding: 0 100px;
+    box-shadow: 0px 0px 5px darkgray;
+    border-radius: 5px;
+    margin: 20px;
 }
 
 details {
@@ -226,8 +238,17 @@ details {
     nav ul li {
         margin: 0;
     }
+    #align_about_us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     #message {
+        position: relative;
         padding: 20px;
+        box-shadow: 0px 0px 5px darkgray;
+        border-radius: 5px;
+        width: 60%;
     }
     nav ul li a:hover {
         background-color: rgba(255, 255, 255, 0.9);
@@ -267,12 +288,28 @@ details {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
+    #align_about_us {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #message {
+        position: relative;
+        width: 90%;
+        box-shadow: 0px 0px 5px darkgray;
+        border-radius: 5px;
+        margin: 20px;
+    }
 }
 
 @media screen and (max-width:300px) {
     header nav ul li {
         margin-right: 0;
         font-size: .7em;
+    }
+    #message {
+        position: relative;
+        width: 100%;
     }
     .titre {
         font-size: 1.2em;
