@@ -168,7 +168,8 @@ footer #firstSection ul li {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: auto;
     width: 100%;
 }
 
@@ -178,6 +179,7 @@ footer #firstSection ul li {
     box-shadow: 0px 0px 5px darkgray;
     border-radius: 5px;
     margin: 20px;
+    width: 30%;
 }
 
 details {
@@ -238,7 +240,7 @@ details {
     nav ul li {
         margin: 0;
     }
-    #align_about_us {
+    .align_about_us {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -283,12 +285,18 @@ details {
     }
 }
 
+.align_about_us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media screen and (max-width:550px) {
     footer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    #align_about_us {
+    .align_about_us {
         display: flex;
         justify-content: center;
         align-items: center;
