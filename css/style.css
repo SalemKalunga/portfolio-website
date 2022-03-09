@@ -5,24 +5,41 @@ body {
     padding: 0;
     font-family: sans-serif;
     position: relative;
-    background-image: url(../images/img3.JPG);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
-body #darken {
-    position: absolute;
+.titre {
+    text-align: center;
+    font-size: 2em;
+    line-height: 10px;
+    color: #333;
+    display: block;
+}
+
+#darken {
+    position: relative;
     height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, .4);
+    background-color: rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#glass {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header {
     height: 70px;
     width: 100%;
-    background-color: rgba(0, 0, 0, .4);
-    position: absolute;
+    background-color: #444;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,13 +70,12 @@ ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rosybrown;
-    animation: animate .1s ease-in-out .2s;
-    transition-duration: 1s;
+    text-decoration: underline;
 }
 
 main {
-    height: 100vh;
+    position: relative;
+    min-height: 100vh;
     width: 100%;
 }
 
@@ -72,12 +88,20 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    background-color: #fff;
+    background-image: url(../images/img3.JPG);
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #apropos {
     position: relative;
+    line-height: 20px;
+    min-height: 100vh;
+    max-height: auto;
     overflow: scroll;
-    box-shadow: 0px 0px 5px #333;
 }
 
 #travaux {
@@ -85,24 +109,43 @@ main {
     height: 100vh;
     width: 100%;
     padding: 10px;
-    overflow: scroll;
+    display: none;
 }
 
 #contact {
+    height: 15vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    background-color: #333;
 }
 
 #skills {
     text-align: center;
-    overflow: scroll;
+    text-align: center;
+}
+
+#contact ul li {
+    float: left;
+    list-style: none;
+    margin: 20px;
+}
+
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #skills h2 {
-    background-color: #333;
     padding: 10px 0;
-    color: #fff;
+    color: #333;
+}
+
+footer {
+    position: relative;
+    height: 20vh;
+    background-color: royalblue;
 }
 
 #message {
@@ -124,44 +167,58 @@ details {
     margin: 10px;
 }
 
-#apropos {
-    overflow: scroll;
+#hireMe {
+    padding: 12px 20px;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #fff;
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px #fff;
+    animation: hireme 3s ease-in-out infinite;
 }
 
-@media screen and (max-width:600px) {
+@keyframes hireme {
+    0% {
+        padding: 12px 20px;
+    }
+    50% {
+        padding: 15px 25px;
+    }
+    100% {
+        padding: 12px 20px;
+    }
+}
+
+#hireMe:hover {
+    padding: 12px 22px;
+    background-color: rgba(0, 0, 0, .5);
+    transition: .2s;
+}
+
+#home {
+    text-align: center;
+}
+
+#home h2 {
+    color: aliceblue;
+    font-size: 2em;
+}
+
+@media screen and (max-width:870px) {
     #home {
         text-align: center;
+    }
+    nav ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+        color: rgb(0, 0, 0);
+        animation: animate .1s ease-in-out .2s;
+        transition-duration: 1s;
     }
     #home h2 {
         color: aliceblue;
         font-size: 2em;
         font-family: Georgia, 'Times New Roman', Times, serif;
-    }
-    #hireMe {
-        padding: 12px 20px;
-        font-size: 1.2em;
-        background-color: rgba(0, 0, 0, 0);
-        border: 2px solid #fff;
-        color: #fff;
-        border-radius: 8px;
-        box-shadow: 0px 0px 5px #fff;
-        animation: hireme 3s ease-in-out infinite;
-    }
-    @keyframes hireme {
-        0% {
-            padding: 12px 20px;
-        }
-        50% {
-            padding: 15px 25px;
-        }
-        100% {
-            padding: 12px 20px;
-        }
-    }
-    #hireMe:hover {
-        padding: 12px 22px;
-        background-color: rgba(0, 0, 0, .5);
-        transition: .2s;
     }
     #apropos {
         position: relative;
@@ -174,7 +231,6 @@ details {
         grid-template-rows: repeat(3, 1fr);
         grid-template-columns: 1fr;
         gap: 10px;
-        overflow: scroll;
     }
     .built-project {
         background-position: center;
@@ -183,5 +239,15 @@ details {
     }
     #instagram_site {
         background-image: url(../images/instagram.jpg);
+    }
+}
+
+@media screen and (max-width:300px) {
+    header nav ul li {
+        margin-right: 0;
+        font-size: .7em;
+    }
+    .titre {
+        font-size: 1.2em;
     }
 }
