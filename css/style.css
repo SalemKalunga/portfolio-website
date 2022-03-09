@@ -257,6 +257,9 @@ details {
     #instagram_site {
         background-image: url(../images/instagram.jpg);
     }
+}
+
+@media screen and (max-width:550px) {
     footer {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
