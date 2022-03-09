@@ -89,7 +89,7 @@ main {
     align-items: center;
     height: 100vh;
     background-color: #fff;
-    background-image: url(../images/img3.JPG);
+    background-image: url(../images/img2.JPG);
     background-position: top;
     background-size: cover;
     background-attachment: fixed;
@@ -257,6 +257,9 @@ details {
         color: rgb(0, 0, 0);
         animation: animate .1s ease-in-out .2s;
         transition-duration: 1s;
+    }
+    #home {
+        background-position: right;
     }
     #home h2 {
         color: aliceblue;
