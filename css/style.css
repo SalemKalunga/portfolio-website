@@ -101,7 +101,6 @@ main {
     line-height: 20px;
     min-height: auto;
     max-height: auto;
-    overflow: scroll;
 }
 
 #travaux {
@@ -166,7 +165,7 @@ footer #firstSection ul li {
 }
 
 #message {
-    padding: 0 20px;
+    padding: 0 100px;
 }
 
 details {
@@ -225,6 +224,9 @@ details {
 @media screen and (max-width:870px) {
     #home {
         text-align: center;
+    }
+    nav ul li {
+        margin: 0;
     }
     nav ul li a:hover {
         background-color: rgba(255, 255, 255, 0.9);
