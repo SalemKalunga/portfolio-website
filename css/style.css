@@ -99,7 +99,7 @@ main {
 #apropos {
     position: relative;
     line-height: 20px;
-    min-height: 100vh;
+    min-height: auto;
     max-height: auto;
     overflow: scroll;
 }
@@ -113,10 +113,12 @@ main {
 }
 
 #contact {
-    height: 15vh;
+    min-height: 10vh;
     display: flex;
     justify-content: center;
-    background-color: #333;
+    background-color: rgb(202, 202, 202);
+    flex-direction: column;
+    align-items: center;
 }
 
 #skills {
@@ -145,7 +147,7 @@ main {
 footer {
     position: relative;
     height: 20vh;
-    background-color: royalblue;
+    background-color: #333;
 }
 
 #message {
