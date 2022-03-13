@@ -26,16 +26,17 @@ header nav ul li a {
     text-shadow: 0px 0px 3px blanchedalmond;
 }
 
-#logo {
+.logo {
     color: #fff;
     padding: 10px;
     border: 1px solid #fff;
     margin-left: 5px;
     border-radius: 5px;
     font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
 }
 
-#com {
+.com {
     color: tomato;
 }
 
@@ -56,6 +57,12 @@ main {
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+}
+
+#darken {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(20deg, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0));
     display: flex;
     justify-content: left;
     align-items: center;
@@ -241,6 +248,75 @@ main {
     background-image: url(/images/Git-Logo-2Color.png);
 }
 
+
+/*WORK ON FOOTER**/
+
+footer {
+    position: relative;
+    min-height: 40vh;
+    width: 100%;
+    background-color: rgb(19, 19, 19);
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .3fr 1fr 1fr;
+}
+
+#foot_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_media_logos {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+#foot_social_media_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#foot_social_media_section ul li {
+    list-style: none;
+    float: left;
+    margin: 10px;
+}
+
+#foot_adresse {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+#foot_adresse ol li {
+    list-style: none;
+    margin: 10px;
+}
+
+#github {
+    box-shadow: 0px 0px 10px #fff;
+}
+
+#instagram {
+    box-shadow: 0px 0px 10px rgb(197, 31, 175);
+}
+
+#facebook {
+    box-shadow: 0px 0px 10px rgb(53, 82, 163);
+}
+
+#gmail {
+    box-shadow: 0px 0px 10px green;
+}
+
 @media screen and (max-width:850px) {
     #home {
         background-image: url(../images/extraImages/img1.jpg);
@@ -256,7 +332,7 @@ main {
         height: 300px;
         width: 60%;
         background-color: rgba(0, 0, 0, .7);
-        left: 0%;
+        left: 5%;
         color: #fff;
         padding: 10px;
         font-family: Arial, Helvetica, sans-serif;
@@ -287,6 +363,7 @@ main {
         border-radius: 5px;
         text-shadow: 0px 0px 3px black;
         transition: 0.3s ease-in-out;
+        cursor: pointer;
     }
     #contactBtn:hover {
         background-color: rgba(0, 0, 0, .7);
@@ -356,6 +433,12 @@ main {
         grid-template-columns: repeat(4, 1fr);
         left: 10%;
     }
+    /*WORK ON FOOTER*/
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .3fr 1fr 1fr;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -373,7 +456,7 @@ main {
         height: 400px;
         width: 90%;
         background-color: rgba(0, 0, 0, .7);
-        left: 0;
+        left: 2%;
         color: #fff;
         padding: 10px;
         font-family: Arial, Helvetica, sans-serif;
