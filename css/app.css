@@ -99,6 +99,65 @@ main {
     #contactBtn:hover {
         background-color: rgba(0, 0, 0, .7);
     }
+    /***WORK ON APROPOS*/
+    #apropos {
+        position: relative;
+        height: 80vh;
+        padding-top: 10px;
+    }
+    .section_titles {
+        text-align: center;
+        margin-bottom: 10px;
+        color: tomato;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    #apropo_container {
+        height: 80vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    #apropo_message {
+        position: relative;
+        height: 300px;
+        width: 50%;
+        background-color: rgb(230, 227, 227);
+        box-shadow: 0px 0px 5px rgba(63, 63, 63, 0.5);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: .5fr 2fr;
+        padding: 10px;
+        text-justify: newspaper;
+    }
+    #profile_picture_in_apropos {
+        height: 50px;
+        width: 50px;
+        background-image: url(/images/img3.jpg);
+        background-size: cover;
+        background-position: center;
+        border: 2px solid tomato;
+        padding: 2px;
+        border-radius: 50%;
+    }
+    #apropos_langues {
+        position: relative;
+        height: 300px;
+        width: 50%;
+        background-color: rgb(230, 227, 227);
+        box-shadow: 0px 0px 5px rgba(63, 63, 63, 0.5);
+        padding: 10px;
+        text-justify: newspaper;
+        line-height: 25px;
+    }
+    #ul {
+        position: relative;
+        left: 10%;
+    }
 }
 
 @media screen and (max-width:600px) {
