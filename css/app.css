@@ -175,6 +175,72 @@ main {
     left: 10%;
 }
 
+
+/**WORK ON COMPETENCES*/
+
+#competences {
+    position: relative;
+    display: grid;
+    grid-template-rows: 0.1fr 2fr;
+    padding-top: 10px;
+}
+
+#skills_section {
+    position: relative;
+    height: 85vh;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    left: 30%;
+}
+
+.skills {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0px 0px 8px lightgray;
+}
+
+#html {
+    background-image: url(/images/5352-html5_102567.png);
+}
+
+#css {
+    background-image: url(/images/file_type_css_icon_130661.png);
+}
+
+#bootstrap {
+    background-image: url(/images/Bootstrap_logo.svg.png);
+}
+
+#javaScript {
+    background-image: url(/images/javascript_icon_130900.png)
+}
+
+#angular {
+    background-image: url(/images/file_type_angular_icon_130754.png);
+}
+
+#sql {
+    background-image: url(/images/icon_sql_256_30046.png);
+}
+
+#java {
+    background-image: url(/images/java_original_wordmark_logo_icon_146459.png);
+}
+
+#spring {
+    background-image: url(/images/Spring_Framework-Logo.wine.png);
+}
+
+#git {
+    background-image: url(/images/Git-Logo-2Color.png);
+}
+
 @media screen and (max-width:850px) {
     #home {
         background-image: url(../images/extraImages/img1.jpg);
@@ -281,6 +347,13 @@ main {
     }
     #ul {
         position: relative;
+        left: 10%;
+    }
+    /**WORK ON COMPETENCES*/
+    #skills_section {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
         left: 10%;
     }
 }
@@ -393,5 +466,12 @@ main {
     #ul {
         position: relative;
         left: 10%;
+    }
+    /*COMPETENCES*/
+    #skills_section {
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        left: 5%;
     }
 }
