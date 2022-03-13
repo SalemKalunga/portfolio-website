@@ -26,6 +26,19 @@ header nav ul li a {
     text-shadow: 0px 0px 3px blanchedalmond;
 }
 
+#logo {
+    color: #fff;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-left: 5px;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#com {
+    color: tomato;
+}
+
 main {
     min-height: 100vh;
     max-height: auto;
