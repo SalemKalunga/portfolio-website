@@ -345,7 +345,30 @@ footer {
     border: 1px solid red;
 }
 
+.bars_container {
+    position: absolute;
+    right: 2%;
+    height: 35px;
+    width: 50px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bars {
+    height: 4px;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
 @media screen and (max-width:850px) {
+    header nav {
+        display: none;
+    }
+    .bars_container {
+        display: flex;
+    }
     #home {
         background-image: url(../images/extraImages/img1.jpg);
         background-position: center;
