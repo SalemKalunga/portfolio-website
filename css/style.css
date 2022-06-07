@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #131C25;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav_bar {
+    position: relative;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.brand_container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.brand_container img {
+    height: 100px;
+    width: 100px;
+}
+
+.nav_bar_menu {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav_bar_links ul {
+    display: flex;
+    gap: 10px;
+}
+
+.nav_bar_links ul li {
+    list-style: none;
+}
+
+.nav_bar_links ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav_bar_links ul li a:hover {
+    color: #FF1616;
+}
+
+.nav_bar_menu_youtubeLink {
+    height: 50px;
+    width: 60px;
+    border-radius: 50%;
+}
+
+.nav_bar_menu_youtubeLink:hover {
+    border: 1px solid lightblue;
+}
+
+
+/*SECOND PART OF THE HEADER*/
+
+.presentation_part {
+    height: 80%;
+    width: 100%;
+    background-color: #333;
+    border: 1px solid lightblue;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+.presentation_part_section_2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
