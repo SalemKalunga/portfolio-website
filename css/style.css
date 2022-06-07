@@ -134,7 +134,6 @@ main {
     height: auto;
     min-height: 100vh;
     width: 100%;
-    border: 1px solid red;
 }
 
 .sections {
@@ -145,12 +144,10 @@ main {
 }
 
 #Apropos {
-    background-color: royalblue;
+    background-color: rgba(235, 235, 235, 0.581);
 }
 
-#Services {
-    background-color: brown;
-}
+#Services {}
 
 #Compétences {
     background-color: darkcyan;
@@ -168,4 +165,120 @@ main {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
+}
+
+.my_description {
+    height: auto;
+    min-height: 25rem;
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid lightblue;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    background-color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.apropos_subsection_1 {
+    font-size: 1.5rem;
+}
+
+.make_me_bold {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #131C25;
+}
+
+.apropos_subsection_2 img {
+    height: 25rem;
+    width: 25rem;
+    transition: .3s ease;
+}
+
+.apropos_subsection_2 img:hover {
+    transform: translateX(20px);
+}
+
+.services_part {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    min-height: 70vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.services_part_1 {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.services_part_1 h1 {
+    color: #131C25;
+}
+
+.services_part_2 {
+    display: flex;
+    justify-content: center;
+}
+
+.services_part_2_subpart_1 {
+    width: 60%;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.my_skills {
+    position: relative;
+    height: auto;
+    min-height: 95vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border: #131C25 1px solid;
+    gap: 10px;
+}
+
+.skill_description_1 {
+    border: 2px solid lightgreen;
+    height: 20rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.skill_description_1 h1 {
+    background-color: #131C25;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.skill_description_1 p {
+    padding: 10px;
+    text-align: center;
+}
+
+.skills_container_part {
+    position: relative;
+    width: 80%;
+    padding: 10px;
+}
+
+.skill img {
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
 }
