@@ -4,13 +4,17 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
 header {
     position: relative;
     height: 100vh;
     width: 100%;
     background-color: #131C25;
     color: #fff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .nav_bar {
@@ -123,4 +127,45 @@ header {
     width: 500px;
     border-radius: 50%;
     border: 1px solid lightgray;
+}
+
+main {
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.sections {
+    position: relative;
+    height: auto;
+    min-height: 100vh;
+    border: 2px solid green;
+}
+
+#Apropos {
+    background-color: royalblue;
+}
+
+#Services {
+    background-color: brown;
+}
+
+#Compétences {
+    background-color: darkcyan;
+}
+
+#Travaux {
+    background-color: crimson;
+}
+
+#Contact {
+    background-color: aqua;
+}
+
+.sections_heading {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
 }
