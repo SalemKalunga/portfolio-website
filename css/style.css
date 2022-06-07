@@ -67,7 +67,7 @@ header {
 }
 
 .nav_bar_menu_youtubeLink:hover {
-    border: 1px solid lightblue;
+    border: 1px solid #FF1616;
 }
 
 
@@ -76,10 +76,39 @@ header {
 .presentation_part {
     height: 80%;
     width: 100%;
-    background-color: #333;
-    border: 1px solid lightblue;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+}
+
+.presentation_part_section_1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.presentation_part_section_1 h1 {
+    font-size: 4rem;
+    width: 80%;
+}
+
+.buttons {
+    width: 80%;
+}
+
+.buttons button {
+    position: relative;
+    padding: 15px 20px;
+    border: none;
+    background-color: #FF1616;
+    color: #fff;
+    border: 2px solid transparent;
+    transition: .2s ease;
+}
+
+.buttons button:hover {
+    background-color: transparent;
+    border: 2px solid #FF1616;
 }
 
 .presentation_part_section_2 {
@@ -87,4 +116,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.presentation_part_section_2 img {
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    border: 1px solid lightgray;
 }
