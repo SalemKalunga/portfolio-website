@@ -18,7 +18,7 @@ header {
 }
 
 .nav_bar {
-    position: relative;
+    position: fixed;
     height: auto;
     width: 100%;
     display: flex;
@@ -26,6 +26,8 @@ header {
     align-items: center;
     padding-right: 20px;
     padding-left: 20px;
+    background-color: #131C25;
+    z-index: 1;
 }
 
 .brand_container {
@@ -35,7 +37,7 @@ header {
 }
 
 .brand_container img {
-    height: 100px;
+    height: 60px;
     width: 100px;
 }
 
@@ -78,10 +80,12 @@ header {
 /*SECOND PART OF THE HEADER*/
 
 .presentation_part {
+    position: absolute;
     height: 80%;
     width: 100%;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
+    bottom: 10%;
 }
 
 .presentation_part_section_1 {
@@ -140,7 +144,6 @@ main {
     position: relative;
     height: auto;
     min-height: 100vh;
-    border: 2px solid green;
 }
 
 #Apropos {
@@ -150,7 +153,8 @@ main {
 #Services {}
 
 #Compétences {
-    background-color: darkcyan;
+    width: 80%;
+    transform: translateX(10%);
 }
 
 #Travaux {
@@ -246,12 +250,11 @@ main {
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    border: #131C25 1px solid;
     gap: 10px;
+    padding: 20px;
 }
 
 .skill_description_1 {
-    border: 2px solid lightgreen;
     height: 20rem;
     font-size: 1.5rem;
     display: flex;
@@ -281,4 +284,5 @@ main {
     height: 50px;
     width: 50px;
     border-radius: 10px;
+    border: 1px solid lightgray;
 }
