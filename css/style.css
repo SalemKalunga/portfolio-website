@@ -157,14 +157,6 @@ main {
     transform: translateX(10%);
 }
 
-#Travaux {
-    background-color: crimson;
-}
-
-#Contact {
-    background-color: aqua;
-}
-
 .sections_heading {
     text-align: center;
     font-size: 3rem;
@@ -285,4 +277,137 @@ main {
     width: 50px;
     border-radius: 10px;
     border: 1px solid lightgray;
+}
+
+#Portfolio {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.projects_container {
+    height: auto;
+    min-height: 80vh;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.projet {
+    height: 20rem;
+    border: 1px solid lightblue;
+    display: grid;
+    grid-template-rows: 5fr 1fr;
+    position: relative;
+}
+
+.projet_image {
+    position: relative;
+    height: 18rem;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+
+.projet_image img {
+    height: 100%;
+    width: 100%;
+}
+
+.projet_link {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.projet_link a {
+    text-decoration: none;
+    color: royalblue;
+}
+
+#Contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#Contact p {
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 70%;
+    padding: 15px;
+    border: 1px solid lightgray;
+}
+
+.form input,
+button {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid lightgray;
+}
+
+.form textarea {
+    text-align: center;
+}
+
+.form button {
+    background-color: #131C25;
+    color: #fff;
+    border: none;
+}
+
+footer {
+    position: relative;
+    height: auto;
+    min-height: 20vh;
+    background-color: #131C25;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social_media_container {
+    width: auto;
+    min-width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social_media_container .logo_container {
+    position: relative;
+    height: 50px;
+    width: 60px;
+}
+
+.social_media_container .logo_container img {
+    height: 100%;
+    width: 100%;
+}
+
+.social_media_container .links {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.social_media_container .links img {
+    height: 40px;
+    width: 40px;
 }
