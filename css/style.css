@@ -108,7 +108,7 @@ header {
     width: 100%;
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    bottom: 10%;
+    bottom: 0%;
 }
 
 .presentation_part_section_1 {
@@ -449,6 +449,9 @@ footer {
 @media screen and (max-width:850px) {
     header {
         height: 50vh;
+    }
+    .presentation_part {
+        overflow: auto;
     }
     .presentation_part_section_1 h1 {
         font-size: 1.4rem;
