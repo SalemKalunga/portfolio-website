@@ -177,11 +177,19 @@ main {
 }
 
 #Apropos {
-    background-color: rgba(235, 235, 235, 0.581);
+    height: auto;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #Services {
-    width: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #Compétences {
@@ -195,19 +203,15 @@ main {
 
 .sections_heading {
     text-align: center;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
+    margin: 10px;
 }
 
 .my_description {
     height: auto;
     min-height: 25rem;
     width: 80%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border: 1px solid lightblue;
     display: grid;
     grid-template-columns: 1.3fr 1fr;
     background-color: #fff;
@@ -238,13 +242,15 @@ main {
 .services_part {
     height: auto;
     min-height: 70vh;
-    width: 100%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
     justify-content: center;
     align-items: center;
 }
+
+.services_part div {}
 
 .services_part_1 {
     position: relative;
@@ -493,14 +499,14 @@ footer {
     .form input {
         font-size: 1.5rem;
         border-radius: 10px;
-        padding: 20px;
+        padding: 5px;
     }
     .form textarea {
         font-size: 1.5rem;
     }
     .form button {
-        padding: 20px;
-        font-size: 2rem;
+        padding: 10px;
+        font-size: 1rem;
         border-radius: 10px;
     }
     .nav_bar_links ul {
@@ -550,5 +556,8 @@ footer {
     }
     .projects_container {
         grid-template-columns: 1fr;
+    }
+    .services_part_2_subpart_1 {
+        width: 100%;
     }
 }
