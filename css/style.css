@@ -142,6 +142,7 @@ header {
     border: 2px solid transparent;
     transition: .2s ease;
     margin-bottom: 5px;
+    text-decoration: none;
 }
 
 .buttons a:hover {
