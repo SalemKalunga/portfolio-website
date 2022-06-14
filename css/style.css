@@ -66,6 +66,10 @@ header {
     color: #FF1616;
 }
 
+.nav_bar_links ul.active {
+    display: flex;
+}
+
 .nav_bar_menu_youtubeLink {
     height: 50px;
     width: 60px;
@@ -74,6 +78,25 @@ header {
 
 .nav_bar_menu_youtubeLink:hover {
     border: 1px solid #FF1616;
+}
+
+.bars_container {
+    height: 40px;
+    width: 40px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.bars_container .bars {
+    display: block;
+    height: 3px;
+    width: 60%;
+    background-color: #fff;
 }
 
 
@@ -93,6 +116,7 @@ header {
     align-items: center;
     flex-direction: column;
     gap: 10px;
+    justify-content: center;
 }
 
 .presentation_part_section_1 h1 {
@@ -100,21 +124,27 @@ header {
     width: 80%;
 }
 
+.bars_container {
+    display: none;
+}
+
 .buttons {
     width: 80%;
 }
 
-.buttons button {
+.buttons a {
     position: relative;
     padding: 15px 20px;
     border: none;
+    display: inline-block;
     background-color: #FF1616;
     color: #fff;
     border: 2px solid transparent;
     transition: .2s ease;
+    margin-bottom: 5px;
 }
 
-.buttons button:hover {
+.buttons a:hover {
     background-color: transparent;
     border: 2px solid #FF1616;
 }
@@ -124,14 +154,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/extraImages/img4.png);
+    border-radius: 50%;
 }
 
-.presentation_part_section_2 img {
-    height: 500px;
-    width: 500px;
-    border-radius: 50%;
-    border: 1px solid lightgray;
-}
+.presentation_part_section_2 img {}
 
 main {
     position: relative;
@@ -150,11 +180,17 @@ main {
     background-color: rgba(235, 235, 235, 0.581);
 }
 
-#Services {}
+#Services {
+    width: 80%;
+}
 
 #Compétences {
-    width: 80%;
-    transform: translateX(10%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5%;
 }
 
 .sections_heading {
@@ -200,16 +236,14 @@ main {
 }
 
 .services_part {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     height: auto;
     min-height: 70vh;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
 }
 
 .services_part_1 {
@@ -410,4 +444,108 @@ footer {
 .social_media_container .links img {
     height: 40px;
     width: 40px;
+}
+
+@media screen and (max-width:850px) {
+    header {
+        height: 50vh;
+    }
+    .presentation_part_section_1 h1 {
+        font-size: 1.4rem;
+    }
+    .my_description {
+        height: 60vh;
+        width: 70%;
+        font-size: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .apropos_subsection_1 {
+        font-size: 1.2rem;
+    }
+    #Services {
+        min-height: 80vh;
+        width: 100%;
+        transform: translateX(0);
+    }
+    #Compétences {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .my_skills {
+        width: 100%;
+    }
+    .projects_container {
+        width: 95%;
+    }
+    #Contact p {
+        width: 90%;
+    }
+    .form {
+        width: 95%;
+    }
+    .form input {
+        font-size: 1.5rem;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    .form textarea {
+        font-size: 1.5rem;
+    }
+    .form button {
+        padding: 20px;
+        font-size: 2rem;
+        border-radius: 10px;
+    }
+    .nav_bar_links ul {
+        position: absolute;
+        display: none;
+        flex-direction: column;
+        top: 110%;
+        background-color: #131c25c7;
+        padding: 10px;
+        font-size: 1.6rem;
+        left: -50%;
+        border: 1px solid #fff;
+    }
+    .bars_container {
+        display: flex;
+    }
+}
+
+@media screen and (max-width:550px) {
+    #Apropos {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    .my_description {
+        width: 100%;
+        height: fit-content;
+    }
+    #Services {
+        height: auto;
+        min-height: 100vh;
+    }
+    .services_part_1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+    .make_me_bold {
+        font-size: 1.5rem;
+    }
+    .apropos_subsection_2 img {
+        height: 20rem;
+        width: 20rem;
+    }
+    .my_skills {
+        grid-template-columns: 1fr;
+    }
+    .projects_container {
+        grid-template-columns: 1fr;
+    }
 }
