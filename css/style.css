@@ -21,8 +21,9 @@ html {
     position: relative;
     height: auto;
     width: 100%;
-    padding: 10rem 15rem;
+    padding: 5rem 15rem;
     background-color: #fff;
+    font-size: 1.6rem;
 }
 header{
     position: relative;
@@ -48,6 +49,9 @@ nav{
     justify-content: center;
     align-items: center;
     height: 100%;
+}
+.link_container ul.active{
+    display: flex;
 }
 .link_container ul li a{
     text-decoration: none;
@@ -77,8 +81,26 @@ nav{
     color: var(--sk_white);
     font-size: 2rem;
 }
+.humberger_menu{
+    position: absolute;
+    height: 2.3rem;
+    width: 2.5rem;
+    right: 5%;
+    top: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    display: none;
+    cursor: pointer;
+}
+.humberger_menu span{
+    height: .4rem;
+    background-color: var(--sk_dark_gray);
+    padding: .1rem;
+}
 .header_main_text h1{
     font-size: 7rem;
+    text-align: center;
 }
 .span_text{
     color: var(--sk_yellow);
@@ -87,30 +109,195 @@ nav{
     display: flex;
     gap: 1rem;
 }
-.header_main_text_buttons button{
+.buttons{
     padding: 1.5rem 3rem;
     background-color: var(--sk_yellow);
     border: var(--sk_yellow);
     border-radius: .5rem;
 }
-.header_main_text_buttons button:hover{
+.buttons:hover{
     background-color: var(--sk_darken_yello);
     border: var(--sk_darken_yello);
     border-radius: .5rem;
 }
-main{
+.double_columns{
     position: relative;
-    height: 100vh;
-    width: 100%;
-    background-color: var(--transparent-black);
-    background-image: url(/images/extraImages/code_2.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-blend-mode: darken;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 3rem 2rem;
+    padding: 5rem;
+}
+.sk_underline{
+    border-bottom: .5rem solid var(--sk_yellow);
+}
+.columns{
+    position: relative;
+    padding: 5rem;
+    font-size: 2.3rem;
+    color: var(--sk_gray);
+    line-height: 3rem;
+}
+
+.flex_me{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+}
+.my_sections:nth-child(even){
+    background-color: #fbfbfb;
+}
+.columns_image_container{
+    align-items: center;
+}
+.my_cartes{
+    position: relative;
+    padding: 2rem;
+    min-height: 50vh;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+    width: 80%;
+    align-self: center;
+}
+.services_cartes{
+    position: relative;
+    min-height: 20rem;
+    padding: 5rem 2rem;
+    align-items: center;
+    font-size: 3rem;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4rem;
-    color: var(--sk_white);
-    text-align: center;
+    box-shadow: 0px 0px 5px lightgray;
+}
+.flags_container{
+    position: absolute;
+    height: 4rem;
+    width: 4rem;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+.colored_flages{
+    height: 4rem;
+    width: 100%;
+    transform: translateY(-.1rem);
+}
+.flag1
+{
+    background-color: var(--sk_gray);
+}
+.flag2
+{
+    background-color: var(--sk_yellow);
+    height: 5rem;
+}
+
+@media screen and (max-width:850px){
+    nav{
+        grid-template-columns: 1fr;
+        font-size: 1.6rem;
+        padding: 0rem;
+    }
+    .humberger_menu{
+        display: flex;
+    }
+    .link_container ul{
+        flex-direction: column;
+        background-color: #fbfbfb;
+        width: 100%;
+        gap: 0;
+    }
+    .link_container ul{
+        position: absolute;
+        display: none;
+        height: auto;
+        width: 30rem;
+        background-color: #fbfbfb;
+        z-index: 1;
+        width: 100%;
+    }
+    
+    .link_container ul.active{
+        display: flex;
+    }
+    .brand_container{
+        padding: 0 5rem;
+    }
+    .link_container ul li, .link_container ul li a  {
+        width: 100%;
+        border-radius: 0;
+        text-shadow: 0px 0px .1rem lightgray;
+    }
+    .header_main_text{
+        padding-left: 1rem;
+    }
+    .my_sections{
+        padding: 2rem 5rem;
+    }
+    .column_image_container{
+        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        position: absolute;
+    }
+    .double_columns{
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem 0;
+    }
+    
+    .columns{
+        padding: 0;
+        font-size: 1.6rem;
+    }
+   
+    .columns_image_container{
+        height: 100%;
+        width: 100%;
+    }
+    .columns_image_container img{
+        height: 100%;
+        width: 90%;
+    }
+    .my_cartes{
+        width: 100%;
+    }
+    .services_cartes{
+        font-size: 2rem;
+    }
+    header{
+        max-height: 60vh;
+    }
+}
+@media screen and (max-width:450px){
+     .buttons{
+        padding: 1.5rem 2rem;  
+    }
+    .header_main_text h1{
+        font-size: 5rem;
+    }
+    .brand_container{
+        padding: 0 3rem;
+    }
+    .my_sections{
+        padding: 3rem;
+    }
+    .double_columns{
+        grid-template-columns: 1fr;
+        padding: 2rem 0;
+    }
+    .columns_image_container img{
+        width: 100%;
+    }
+    .my_cartes{
+        grid-template-columns: 1fr;
+    }
+    .services_cartes{
+        background-color: var(--sk_white);
+    }
 }
