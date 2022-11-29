@@ -323,28 +323,46 @@ nav{
   
 }
 .form_container_form form{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
 }
 .form_container_form form input,.form_container_form form textarea{
     width: 100%;
     padding: 1rem 2rem;
     outline: none;
-    display: block;
-    margin: 1rem;
-}
-.form_container_form form button{
-    margin: 1rem;
 }
 footer{
     position: relative;
     width: 100%;
-    background-color: #333;
+    background-color: var(--sk_dark_gray);
     height: 10vh;
-    color: #fff;
+    color: var(--sk_white);
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.6rem;
+}
+.loading{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+.loading p{
+    font-size: 1.6rem;
+    color: lightgray;
+}
+.loading img{
+    height: 20rem;
+    width: 20rem;
 }
 @media screen and (max-width:850px){
     nav{
