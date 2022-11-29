@@ -131,6 +131,7 @@ nav{
     padding: 3rem 2rem;
     padding: 5rem;
 }
+
 .sk_underline{
     border-bottom: .5rem solid var(--sk_yellow);
 }
@@ -489,5 +490,8 @@ footer{
     }
     .form_container{
         grid-template-columns: 1fr;
+    }
+    .header_main_text_buttons{
+        flex-direction: column;
     }
 }
