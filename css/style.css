@@ -114,6 +114,9 @@ nav{
     background-color: var(--sk_yellow);
     border: var(--sk_yellow);
     border-radius: .5rem;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.6rem;
 }
 .buttons:hover{
     background-color: var(--sk_darken_yello);
