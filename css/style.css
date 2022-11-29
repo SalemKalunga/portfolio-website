@@ -238,7 +238,11 @@ nav{
     flex-direction: column;
     border: 1px solid lightgray;
     background-color: var(--sk_white);
-
+    transition: all .2s ease-in-out;
+}
+.portfolio_project:hover{
+    transform: translateY(-1rem);
+    box-shadow: .3rem .3rem .5rem lightgray;
 }
 .project_image_container{
     position: relative;
@@ -269,6 +273,28 @@ nav{
 }
 .project_image_container img{
     width: 100%;
+}
+.iu_ux_design_projects{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:2rem;
+}
+.ui_ux_project{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.ui_ux_project img{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    transition: all .2s ease;
+}
+.ui_ux_project img:hover{
+    transform: translateY(-1rem);
+    box-shadow: .5rem .5rem 1rem lightgray;
 }
 @media screen and (max-width:850px){
     nav{
