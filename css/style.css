@@ -338,9 +338,9 @@ nav{
 footer{
     position: relative;
     width: 100%;
-    background-color: var(--sk_dark_gray);
+    background-color: #333;
     height: 10vh;
-    color: var(--sk_white);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
