@@ -1,6 +1,6 @@
 window.onload = function() {
-     let loading = document.querySelector(".loading");
-     loading.style="display:none;"
+    //  let loading = document.querySelector(".loading");
+    //  loading.style="display:none;"
 }
 let ul = document.querySelector(".link_container ul");
 let clickme = document.querySelector(".humberger_menu");
