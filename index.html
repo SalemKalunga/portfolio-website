@@ -25,7 +25,7 @@
                     <li><a href="#home">accueil</a></li>
                     <li><a href="#apropos">apropos</a></li>
                     <li><a href="#services">services</a></li>
-                    <li><a href="#compétences">compétences</a></li>
+                    <li><a href="#competences">compétences</a></li>
                     <li><a href="#langues">langues</a></li>
                     <li><a href="#portfolio">portfolio</a></li>
                     <li><a href="#contact">contact</a></li>
@@ -120,7 +120,7 @@
             </div>
         </div>
         </section>
-        <section class="my_sections flex_me">
+        <section id="competences" class="my_sections flex_me">
             <h2><span class="sk_underline">Mes</span> compétences</h2>
             <p>Voici les outils que je maitrise et que j'utilise dans différents projets :</p>
             <div class="mes_competences">
@@ -217,7 +217,7 @@
                 </div>
             </div>
         </section>
-        <section class="my_sections flex_me">
+        <section id="portfolio" class="my_sections flex_me">
             <h2><span class="sk_underline">Mon</span> portfolio</h2>
             <p>Projet Récent</p>
             <div class="portfolio_container">
@@ -317,26 +317,60 @@
                 </div>
             </div>
         </section>
-        <section class="my_sections flex_me">
+        <section id="langues" class="my_sections flex_me">
+            <h2><span class="sk_underline">Lan</span>gues</h2>
+            <p>En ce moment je parle courrament 4 langues</p>
+            <ul>
+                <li>Anglais</li>
+                <li>Français</li>
+                <li>Swahili</li>
+                <li>Lingala</li>
+            </ul>
+        </section>
+        <section id="uiux_portfolio" class="my_sections flex_me">
             <h2><span class="sk_underline">UI/UX</span> Design portfolio</h2>
             <p>Projets récent en AdobeXD</p>
             <div class="iu_ux_design_projects">
                 <div class="ui_ux_project">
-                    <img width=650 src="images/extraImages/UIUX.jpg" alt="ABS Congo UI/UX">
+                    <img width=200 src="images/extraImages/UIUX.jpg" alt="ABS Congo UI/UX">
                 </div>
                 <div class="ui_ux_project">
-                    <img width=650 src="images/extraImages/UIUX2.jpg" alt="ABS Congo UI/UX">
+                    <img width=200 src="images/extraImages/UIUX2.jpg" alt="ABS Congo UI/UX">
                 </div>
                 <div class="ui_ux_project">
-                    <img width=650 src="images/extraImages/UIUX3.jpg" alt="ABS Congo UI/UX">
+                    <img width=200 src="images/extraImages/UIUX3.jpg" alt="ABS Congo UI/UX">
                 </div>
                 <div class="ui_ux_project">
-                    <img width=650 src="images/extraImages/UIUX4.jpg" alt="ABS Congo UI/UX">
+                    <img width=200 src="images/extraImages/UIUX4.jpg" alt="ABS Congo UI/UX">
                 </div>
             </div>
         </section>
+        <section class="my_sections flex_me">
+            <h2><span class="sk_underline">Con</span>tactez-moi</h2>
+            <div class="form_container">
+                <div class="contact_information ">
+                    <ul class="flex_me">
+                        <li><a href="mailto:salemledev65@gmail.com"><i class="far fa-envelope"></i> salemledev@gmail.com</a></li>
+                        <li><a aria-label="Chat on WhatsApp" href="https://wa.me/+243843225749"><i class="fab fa-whatsapp"></i> WhatsApp</li>
+                        <li><a href="https://www.instagram.com/koni_salem_sk2/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://www.youtube.com/@salemkalunga"><i class="fab fa-youtube"></i> Youtube</a></li>
+                        <li><a href="tel:+243843225749"><i class="fas fa-phone"></i> Appeler moi</a></li>
+                    </ul>
+                </div>
+                <div class="form_container_form" >
+                    <form action="post" >
+                        <input name="nom" type="text" placeholder="votre nom" required>
+                        <input name="sujet" type="text" placeholder="le sujet" required>
+                        <input name="email" type="email" placeholder="votre adresse mail" required>
+                        <textarea name="message" id="message" cols="30" placeholder="message" rows="10" required></textarea>
+                        <button class="buttons">Envoyer</button>
+                    </form>
+                </div>
+            </div>  
+        </section>
     </main>
     <footer>
+        <p><i class="far fa-copyright"></i> By Salem Kalunga</p>
         <script src="js/script.js"></script>
     </footer>
 </body>

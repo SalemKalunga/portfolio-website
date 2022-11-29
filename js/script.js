@@ -12,3 +12,6 @@ lis.forEach(element => {
     ul.classList.toggle("active")
    }) 
 });
+const toggleImage = ()=>{
+    
+}
