@@ -377,6 +377,9 @@ nav{
     .mes_competences{
         grid-template-columns: repeat(4,1fr);
     }
+    .iu_ux_design_projects{
+        grid-template-columns: repeat(2,1fr);
+    }
 }
 @media screen and (max-width:450px){
      .buttons{
@@ -409,5 +412,8 @@ nav{
     }
     .mes_competences{
         grid-template-columns: repeat(3,1fr);
+    }
+    .iu_ux_design_projects{
+        grid-template-columns: 1fr;
     }
 }
