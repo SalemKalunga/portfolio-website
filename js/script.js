@@ -1,3 +1,7 @@
+window.addEventListener("load",()=>{
+    const loading = document.querySelector(".loading");
+    loading.style="display:none";
+})
 const observer = new IntersectionObserver(entries=>{
     entries.forEach(entry=>{
         entry.target.classList.toggle("show",entry.isIntersecting)
