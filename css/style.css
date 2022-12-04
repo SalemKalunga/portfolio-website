@@ -176,9 +176,37 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 0px 5px lightgray;
+    box-shadow: 0px 0px 2px lightgray;
     background-color: var(--sk_white);
 }
+.remove{
+    opacity: 0;
+    transform: translateX(-5rem);
+    filter: blur(2px);
+    animation-fill-mode: backwards;
+    transition: all .8s;
+
+}
+.show{
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+    transition: all .8s ease-in-out;
+}
+
+.fadeOut{
+    opacity: 0;
+    filter: blur(2px);
+    transform: translateY(5rem);
+}
+.fadeIn{
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+    transition: all .8s; 
+}
+
+
 .flags_container{
     position: absolute;
     height: 4rem;
@@ -242,11 +270,14 @@ nav{
     flex-direction: column;
     border: 1px solid lightgray;
     background-color: var(--sk_white);
-    transition: all .2s ease-in-out;
 }
-.portfolio_project:hover{
-    transform: translateY(-1rem);
-    box-shadow: .3rem .3rem .5rem lightgray;
+.closeBtn{
+    color: red;
+    font-size: 1.9rem;
+    position: absolute;
+    top: 1%;
+    right: 5%;
+    cursor: pointer;
 }
 .project_image_container{
     position: relative;
@@ -368,6 +399,51 @@ footer{
     height: 20rem;
     width: 20rem;
 }
+.show_gallery{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background-color: var(--transparent-black);
+    z-index: 1;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.show_gallery.active{
+    display: flex;
+}
+.show_gallery img{
+    height: 80%;
+    width: 60%;
+    animation: fadeIn 1s ease-in-out backwards; 
+}
+
+@keyframes fadeIn {
+    0%{
+        transform: translateY(-2rem);
+        opacity: 0;
+    }
+    50%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        display: none;
+    }
+}
+@keyframes fadeOut {
+    from{
+        transform: translateY(0rem);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(-2rem);
+        opacity: 0;
+        display: none;
+    }
+    
+}
+
 @media screen and (max-width:850px){
     nav{
         grid-template-columns: 1fr;
@@ -451,6 +527,10 @@ footer{
     }
     .iu_ux_design_projects{
         grid-template-columns: repeat(2,1fr);
+    }
+    .show_gallery img{
+        width: 90%;
+        height: 60%;
     }
 }
 @media screen and (max-width:450px){

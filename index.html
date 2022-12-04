@@ -15,14 +15,15 @@
     <title>Salem Kalunga</title>
 </head>
 <body>
-    <script>
-        location.href="http://sk.konihostingtest.info/"
-    </script>
     <!-- <section class="flex_me loading">
         <img src="images/extraImages/04de2e31234507.564a1d23645bf.gif" alt="loading">
         <img src="images/extraImages/logo.png" alt="">
         <p>salemkalunga.com</p>
     </section> -->
+        <div class="show_gallery">
+            <span onclick="hideShow()" class="closeBtn"><i  class="fas fa-times-circle"></i></span>
+            <img src="images/extraImages/UIUX5.jpg" width=300 alt="image">
+        </div>
     <header>
         <nav>
             <div class="brand_container">
@@ -59,7 +60,7 @@
             <h2><span class="sk_underline">Qui</span> sui-je?</h2>
             <div class="double_columns">
                 <div class="columns columns_image_container flex_me">
-                    <img src="images/extraImages/IMG_2541.jpg" width="320" alt="image de Salem Kalunga">
+                    <img class="fadeOut myImage" src="images/extraImages/IMG_2541.jpg" width="320" alt="image de Salem Kalunga">
                 </div>
                 <div class="columns flex_me">
                     <p>Salut, moi c'est SALEM, je suis ingénieur Logiciel, et développeur web spécialisé, travaillant présentement chez Afritech Business Solutions SARL (ABS), je suis dans le domaine du développent logiciel depuis 2019 et depuis ce temps j'ai testé et utilisé plusieurs technologies (Langages de programmation, Frameworks et Libraires) pour le développement d'applications sur différentes plateformes. Je préfère particulièrement le développement web et c'est dans ce domaine que je me suis spécialisé depuis.</p>
@@ -70,56 +71,56 @@
         <section id="services" class="my_sections services_section flex_me">
         <h2><span class="sk_underline">Ser</span>vices</h2>
         <div class="my_cartes">
-            <div class="services_cartes flex_me">
+            <div class="services_cartes remove flex_me">
                 <div class="flags_container">
                     <span class="colored_flages flag1"></span>
                     <span class="colored_flages flag2"></span>
                 </div>
                 <p>Création d'applications web</p>
             </div>
-            <div class="services_cartes flex_me">
+            <div class="services_cartes remove flex_me">
                 <div class="flags_container">
                     <span class="colored_flages flag1"></span>
                     <span class="colored_flages flag2"></span>
                 </div>
                 <p>Création de site web</p>
             </div>
-            <div class="services_cartes flex_me">
+            <div class="services_cartes remove flex_me">
                 <div class="flags_container">
                     <span class="colored_flages flag1"></span>
                     <span class="colored_flages flag2"></span>
                 </div>
                 <p>Search Engine Optimisation (SEO)</p>
             </div>
-            <div class="services_cartes flex_me">
+            <div class="services_cartes remove flex_me">
                 <div class="flags_container">
                     <span class="colored_flages flag1"></span>
                     <span class="colored_flages flag2"></span>
                 </div>
                 <p>UI/UX Design</p>
             </div>
-            <div class="services_cartes flex_me">
+            <div class="services_cartes remove flex_me">
                 <div class="flags_container">
                     <span class="colored_flages flag1"></span>
                     <span class="colored_flages flag2"></span>
                 </div>
                 <p>Géstion de contenues Digital</p>
             </div>
-            <div class="services_cartes flex_me">
+            <div class="services_cartes remove flex_me">
                 <div class="flags_container">
                     <span class="colored_flages flag1"></span>
                     <span class="colored_flages flag2"></span>
                 </div>
                 <p>Marketing des réseaux sociaux</p>
             </div>
-            <div class="services_cartes flex_me">
+            <div class="services_cartes remove flex_me">
                 <div class="flags_container">
                     <span class="colored_flages flag1"></span>
                     <span class="colored_flages flag2"></span>
                 </div>
                 <p>Maintenance de sites web</p>
             </div>
-            <div class="services_cartes flex_me">
+            <div class="services_cartes remove flex_me">
                 <div class="flags_container">
                     <span class="colored_flages flag1"></span>
                     <span class="colored_flages flag2"></span>
@@ -131,7 +132,7 @@
         <section id="competences" class="my_sections flex_me">
             <h2><span class="sk_underline">Mes</span> compétences</h2>
             <p>Voici les outils que je maitrise et que j'utilise dans différents projets :</p>
-            <div class="mes_competences">
+            <div class="mes_competences fadeOut">
                 <div class="competence_carte">
                     <div class="competence_carte_image_cont">
                         <img src="images/logos/html.png" alt="html logo">
@@ -229,7 +230,7 @@
             <h2><span class="sk_underline">Mon</span> portfolio</h2>
             <p>Projet Récent</p>
             <div class="portfolio_container">
-                <div class="portfolio_project">
+                <div class="portfolio_project remove">
                     <div class="project_image_container">
                         <img width="400" src="/images/extraImages/jupiter-security.png" alt="Le site web de Jupiter Sécurity">
                     </div>
@@ -247,7 +248,7 @@
                         <a href="https://jupitersecurity.org/">visiter<i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="portfolio_project">
+                <div class="portfolio_project remove">
                     <div class="project_image_container">
                         <img width="400" src="/images/extraImages/abscongo_2.png" alt="Le site web de Jupiter Sécurity">
                     </div>
@@ -266,7 +267,7 @@
                         <a href="http://abscongo.konihostingtest.info/">visiter</a>
                     </div>
                 </div>
-                <div class="portfolio_project">
+                <div class="portfolio_project remove">
                     <div class="project_image_container">
                         <img width="400" src="/images/extraImages/academy_2.png" alt="Le site web D'abs Academy">
                     </div>
@@ -285,7 +286,7 @@
                         <a href="http://abscongo.konihostingtest.info/">visiter</a>
                     </div>
                 </div>
-                <div class="portfolio_project">
+                <div class="portfolio_project remove">
                     <div class="project_image_container">
                         <img width="200" src="/images/extraImages/salemcorp.png" alt="Site web de Corporate">
                     </div>
@@ -297,7 +298,7 @@
                         <a href="http://site1.konihostingtest.info/">visiter</a>
                     </div>
                 </div>
-                <div class="portfolio_project">
+                <div class="portfolio_project remove">
                     <div class="project_image_container">
                         <img width="200" src="/images/extraImages/academy_1.png" alt="Le site web de Jupiter Sécurity">
                     </div>
@@ -309,7 +310,7 @@
                         <a href="https://academy.abscongo.com/">visiter</a>
                     </div>
                 </div>
-                <div class="portfolio_project">
+                <div class="portfolio_project remove">
                     <div class="project_image_container">
                         <img width="200" src="/images/extraImages/salem.png" alt="mon portfolio">
                     </div>
@@ -339,18 +340,7 @@
             <h2><span class="sk_underline">UI/UX</span> Design portfolio</h2>
             <p>Projets récent en AdobeXD</p>
             <div class="iu_ux_design_projects">
-                <div class="ui_ux_project">
-                    <img width=300 src="images/extraImages/UIUX.jpg" alt="ABS Congo UI/UX">
-                </div>
-                <div class="ui_ux_project">
-                    <img width=300 src="images/extraImages/UIUX2.jpg" alt="ABS Congo UI/UX">
-                </div>
-                <div class="ui_ux_project">
-                    <img width=300 src="images/extraImages/UIUX3.jpg" alt="ABS Congo UI/UX">
-                </div>
-                <div class="ui_ux_project">
-                    <img width=300 src="images/extraImages/UIUX4.jpg" alt="ABS Congo UI/UX">
-                </div>
+            
             </div>
         </section>
         <section class="my_sections flex_me">
